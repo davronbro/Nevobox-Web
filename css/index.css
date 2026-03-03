@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Hoves";
+  font-weight: 400;
+  background-color: black;
+  height: 13222px;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+address,
+dl,
+ol,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  display: inline-block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  border: 0;
+  background: none;
+  outline: none;
+  resize: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter/Inter_24pt-Regular.woff") format("woff"),
+    url("../fonts/Inter/Inter_24pt-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter/Inter_24pt-Medium.woff") format("woff"),
+    url("../fonts/Inter/Inter_24pt-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter_24pt-SemiBold.woff") format("woff")
+    url("../fonts/Inter/Inter_24pt-SemiBold.woff2");
+  font-weight: 600;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Hoves";
+  src:
+    url("/fonts/Hoves/TTHoves-Regular.woff") format("woff"),
+    url("/fonts/Hoves/TTHoves-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Hoves";
+  src:
+    url("/fonts/Hoves/TTHoves-Medium.woff") format("woff"),
+    url("/fonts/Hoves/TTHoves-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Hoves";
+  src:
+    url("/fonts/Hoves/TTHoves-DemiBold.woff") format("woff"),
+    url("/fonts/Hoves/TTHoves-DemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Hoves";
+  src:
+    url("/fonts/Hoves/TTHoves-Bold.woff") format("woff"),
+    url("/fonts/Hoves/TTHoves-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("/fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+    url("/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("/fonts/Montserrat/Montserrat-Medium.woff") format("woff"),
+    url("/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Next Art";
+  src:
+    url("/fonts/Next-Art/NEXTART-Bold.woff") format("woff"),
+    url("/fonts/Next-Art/NEXTART-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Segoeu";
+  src:
+    url("/fonts/Segoeu/segoeuithis.woff") format("woff"),
+    url("/fonts/Segoeu/segoeuithis.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Segoeu";
+  src:
+    url("/fonts/Segoeu/segoeuithibd.woff") format("woff"),
+    url("/fonts/Segoeu/segoeuithibd.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  display: swap;
+}
+
+.header {
+  padding: 15px 0;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s ease;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__wrapper .logo {
+  font-size: 25px;
+  font-weight: 600;
+  background: linear-gradient(141deg, #ff6b35 0%, #f7931e 50%, #ffd60a 100%);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.header__wrapper nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header__wrapper nav ul li {
+  padding: 26px;
+}
+
+.header__wrapper nav a {
+  position: relative;
+  display: block;
+  color: white;
+  font-family: "Inter";
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  padding-bottom: 6px;
+}
+
+.header__wrapper nav a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff7800;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.header__wrapper nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.header__wrapper .contact-btn {
+  font-weight: 600;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  background: linear-gradient(141deg, #ffd60a 0%, #f7931e 50%, #ff6b35 100%);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.header__wrapper .contact-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(141deg, #ff6b35 0%, #f7931e 50%, #ffd60a 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.header__wrapper .contact-btn:hover::before {
+  opacity: 1;
+}
+
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);  /* Dark overlay */
+  z-index: -999;
+}
+.hero .container {
+  position: relative;
+  height: 100%;
+}
+
+.hero .hero__image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1000;
+}
+
+.hero__wrapper{
+  margin-top: 150px;
+}
+
+.hero__content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 585px;
+  width: 100%;
+}
+
+.hero__content h1 {
+  font-weight: 600;
+  color: white;
+  line-height: 102%;
+  font-size: 48px;
+}
+
+.hero__content h1 span {
+  color: #f7931e;
+}
+
+.hero__content p {
+  font-size: 16px;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.hero__btns{
+  display: flex;
+  gap: 10px;
+}
+
+.hero__btns .cta__btn {
+  border-radius: 4px;
+  display: flex;
+  padding: 12px 25px;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(90deg, #ff6b35 0%, #f7931e 50%, #ffd60a 100%);
+  transition: 0.3s ease;
+  font-weight: 500;     
+  cursor: pointer;
+}
+
+.hero__btns .cta__btn:hover {
+    transform: translateY(-2px);
+}
+
+.hero__btns .cta__explore {
+  color: white;
+  padding: 10px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 15px;
+  transition: 0.3s;
+  font-weight: 500;     
+}
+
+.hero__btns .cta__explore:hover{
+  color: black;
+  background-color: white;
+}
+
+.about{
+  padding: 50px 0 90px;
+}
+
+.about__wrapper{
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.about__image{
+  position: relative;
+  width: 100%;    
+  max-width: 550px; 
+  flex-shrink: 0;
+}
+
+.about__image img{
+  width: 100%;
+  height: auto
+}
+
+.about__image::after{
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 2px solid rgba(247, 147, 30, 0.3);
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.about__content{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about__content h4{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f7931e;
+}
+
+.about__content p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 161%;
+  color: #d1d5db;
+}
+
+.about__content h1{
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 114%;
+  color: #fff;
+}
+
+.about__content .stats__counter {
+  margin-top: 30px;
+}
+
+.about__content .stats__counter .stats-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 50px;
+}
+.about__content .stats__counter p{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 154%;
+  color: #9ca3af;
+}
+
+.about__content .stat-item .counter {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  background: linear-gradient(30deg, #ff6b35 0%, #ffd60a 50%);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 8px;
+}
