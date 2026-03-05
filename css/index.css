@@ -89,7 +89,7 @@ select {
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter/Inter_24pt-SemiBold.woff") format("woff"),
-    url("../fonts/Inter/Inter_24pt-SemiBold.woff2") format ("woff2");
+       url("../fonts/Inter/Inter_24pt-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   display: swap;
@@ -455,4 +455,71 @@ select {
   background-clip: text;
   color: transparent;
   margin-bottom: 8px;
+}
+
+.service{
+  padding: 100px 0 90px;
+}
+.service__wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 50px;
+  margin-top: 60px;
+}
+.service__desc h4{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f7931e;
+  text-align: center;
+}
+
+.service__desc h1{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 113%;
+  text-align: center;
+  margin-top: 12px;
+  color: #fff;
+}
+
+.service__desc p{
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 161%;
+  margin: 0 auto;
+  text-align: center;
+  color: #d1d5db;
+  padding-top: 20px;
+}
+
+.service__card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 33px;
+}
+
+.service__card h3{
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 143%;
+  color: #fff;
+}
+
+.service__card p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 163%;
+  color: #9ca3af;
+}
+
+.service__card img{
+  width: 64px;
+  height: 64px;
 }
